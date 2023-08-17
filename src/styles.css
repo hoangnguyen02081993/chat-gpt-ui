@@ -18,7 +18,7 @@ body {
 
 /* Chat log styles */
 #chat-log {
-  height: 300px;
+  height: calc(100vh - 140px);
   overflow-y: scroll;
   margin-bottom: 10px;
   border: 1px solid #e0e0e0;

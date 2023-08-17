@@ -96,6 +96,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // Append message element to chat log
     chatLog.appendChild(messageContainerElement);
+
+    // scroll to bottom when appending new message
+    chatLog.scrollTo(0, chatLog .scrollHeight);
   }
   
   
