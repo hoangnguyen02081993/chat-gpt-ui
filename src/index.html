@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChatGPT Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div id="chat-log"></div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Type your message...">
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+
+  <div id="settings-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>API Settings</h2>
+      <form id="settings-form">
+        <label for="api-key">API Key:</label>
+        <input type="text" id="api-key" required>
+
+        <label for="api-endpoint">API Endpoint:</label>
+        <input type="text" id="api-endpoint" required>
+
+        <label for="deployment-name">Deployment Name:</label>
+        <input type="text" id="deployment-name" required>
+
+        <button type="submit">Save</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="settings-button" class="settings">
+    <span>&#9881;</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

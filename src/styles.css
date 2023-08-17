@@ -1,0 +1,213 @@
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Chat container styles */
+.chat-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Chat log styles */
+#chat-log {
+  height: 300px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+/* Chat input styles */
+.chat-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.chat-input input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.chat-input button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+/* Settings modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+/* Close button styles */
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Settings button styles */
+.settings {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 6px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* API settings form styles */
+.settings label {
+  display: block;
+  margin-top: 10px;
+}
+
+.settings input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+.settings button[type="submit"] {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Message styles */
+.message {
+  margin-bottom: 10px;
+}
+
+.message code {
+  display: block;
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin: 10px 0;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+/* Modal container styles */
+.modal-content {
+  background-color: #ffffff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+/* Input container styles */
+.modal-content label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Input styles */
+.modal-content input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  margin-top: 5px;
+}
+
+/* Submit button styles */
+.modal-content button[type="submit"] {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.message-container {
+  left: 0px;
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+/* Message styles */
+.message {
+  /* Existing styles */
+  background-color: #B9B9B9;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.message-container.chatbot {
+  justify-content: left;
+}
+
+.message-container.chatbot .message {
+  text-align: left;
+}
+
+/* User message styles */
+.message-container.user {
+  justify-content: right;
+}
+
+.message-container.user .message {
+  text-align: right;
+}
+
+.avatar {
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px 10px;
+  border: 1px solid black;
+}
+
