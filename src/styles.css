@@ -1,3 +1,27 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+code {
+  border-radius: 5px;
+}
+
 /* Body styles */
 body {
   font-family: Arial, sans-serif;
@@ -210,5 +234,22 @@ body {
   margin: 10px 10px;
   border: 1px solid black;
   margin-bottom: 15px;
+}
+
+#user-type {
+  margin-right: 10px;
+  width: 100px;
+}
+
+.message-image {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.message-image .img-item {
+  width: 230px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5px;
 }
 
