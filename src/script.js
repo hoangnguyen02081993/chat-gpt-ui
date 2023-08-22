@@ -69,20 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
     textElement.classList.add('message-text');
   
     // Check if the message contains a code section
-    debugger;
-    if (message.includes('```')) {
-      while (message.includes('```')) {
-        var codeSection = message.match(/```(.+?)```/s);
-        if (codeSection) {
-          var codeElement = document.createElement('code');
-          codeElement.textContent = codeSection[1];
-          textElement.innerHTML = message.replace(codeSection[0], codeElement.outerHTML);
-          message = message.replace(codeSection[0], codeElement.outerHTML);
-        }
-      }
-    } else {
-      textElement.textContent = message;
-    }
+    textElement.innerHTML = marked.parse(message);
   
     // Append text element to message element
     messageElement.appendChild(textElement);
