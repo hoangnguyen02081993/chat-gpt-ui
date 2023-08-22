@@ -69,14 +69,16 @@ document.addEventListener('DOMContentLoaded', function() {
     textElement.classList.add('message-text');
   
     // Check if the message contains a code section
+    debugger;
     if (message.includes('```')) {
-      var codeSection = message.match(/```(.+?)```/s);
-      if (codeSection) {
-        var codeElement = document.createElement('code');
-        codeElement.textContent = codeSection[1];
-        textElement.innerHTML = message.replace(codeSection[0], codeElement.outerHTML);
-      } else {
-        textElement.textContent = message;
+      while (message.includes('```')) {
+        var codeSection = message.match(/```(.+?)```/s);
+        if (codeSection) {
+          var codeElement = document.createElement('code');
+          codeElement.textContent = codeSection[1];
+          textElement.innerHTML = message.replace(codeSection[0], codeElement.outerHTML);
+          message = message.replace(codeSection[0], codeElement.outerHTML);
+        }
       }
     } else {
       textElement.textContent = message;
